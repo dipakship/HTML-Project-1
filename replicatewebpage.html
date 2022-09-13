@@ -18,18 +18,27 @@
                 }
 
                 p{
-                    text-align: center;
                     font-size: 18px;
                     font-family: Arial, Helvetica, sans-serif;
                 }
 
-                .center{
-                    margin-left: auto;
-                    margin-right: auto;
+                body{
+                    text-align: center
                 }
 
-                .bold{
-                    font-weight: bold;
+                .button{
+                    background-color: #2960D7;
+                    color: white;
+                    border: none;
+                    text-align: center;
+                    font-size: 16px;
+                    padding: 20px;
+                    border-radius: 24px; 
+                    margin: 6px 6px;
+                }
+
+                .lineSpacing{
+                    line-height: 0.5em;
                 }
                 
                 #black{
@@ -39,8 +48,20 @@
                 #dayOfTheWeek{
                     text-align: center;
                     font-weight: bold;
-                    font-size: 18px;
+                    font-size: 20px;
                     font-family: Arial, Helvetica, sans-serif;
+                }
+
+                #temperature{
+                    font-family: 'Times New Roman', Times, serif;
+                    font-size: 20px;
+                    color: gray;
+                }
+
+                #authorCredit{
+                    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+                    color: gray;
+                    font-size: 16px;
                 }
 
             </style>
@@ -48,18 +69,26 @@
 
     <body>
         <h1> &#127780; </h1>
-        <h1> Currently 21° in Tokyo </h1>
+        <h1 class = "lineSpacing"> Currently 21° in Tokyo </h1>
         <h1 id = "black"> 13° / <b> 23° </b> </h1>
         <br>
 
         <p id = "dayOfTheWeek"> &#127783; Tomorrow </p>
-        <p> 10° / 22° </p>
+        <p id = "temperature"> 10° / <b> 22° </b> </p>
         <br>
 
         <p id = "dayOfTheWeek"> &#127781; Saturday </p>
-        <p> 15° / 17° </p>
+        <p id = "temperature"> 15° / <b> 17° </b> </p>
         <br>
 
         <p id = "dayOfTheWeek"> &#127774; Sunday </p> 
-        <p> 25° / 28° </p>
+        <p id = "temperature"> 25° / <b> 28° </b> </p>
+
+        <br>
+
+        <button class = "button">
+            Change city
+        </button>
+
+        <p id = "authorCredit"> Coded by Matt Delac </p>
     </body>
