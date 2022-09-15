@@ -37,26 +37,35 @@
                     margin: 6px 6px;
                 }
 
+                .button:hover{
+                    background-color: white;
+                    color: #2F5FD5;
+                    border: 1px solid #2F5FD5;
+                }
+
                 .lineSpacing{
-                    line-height: 0.5em;
+                    line-height: 0.2em;
                 }
                 
                 #black{
                     color:black;
                     font-family: Arial, Helvetica, sans-serif;
+                    font-weight: lighter;
                 }
 
                 #dayOfTheWeek{
                     text-align: center;
                     font-weight: bold;
-                    font-size: 20px;
+                    font-size: 19px;
                     font-family: Arial, Helvetica, sans-serif;
                 }
 
                 #temperature{
                     font-family: 'Times New Roman', Times, serif;
-                    font-size: 20px;
-                    color:#7F7F7F;
+                    font-size: 19px;
+                    font-weight: lighter;
+                    color:#818181;
+                    word-spacing: 9px;
                 }
 
                 #authorCredit{
@@ -74,7 +83,7 @@
         <h1 id = "black"> 13° / <b> 23° </b> </h1>
         <br>
 
-        <p id = "dayOfTheWeek"> &#127783; Tomorrow </p>
+        <p id = "dayOfTheWeek", class = "lineSpacing"> &#127783; Tomorrow </p>
         <p id = "temperature"> 10° / <b> 22° </b> </p>
         <br>
 
